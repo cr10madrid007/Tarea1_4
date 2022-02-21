@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_4.MainPage">
+
+    <StackLayout>
+        <Image x:Name="foto" Source="camara2.png" Margin="4,0,2,0" WidthRequest="150" HeightRequest="150"  />
+        <Button x:Name="btnFoto" Text="Foto" Clicked="btnFoto_Clicked" />
+
+
+
+        <Entry x:Name="txtNombre" Placeholder="Nombre"  />
+        <Entry x:Name="txtDescripcion" Placeholder="Descripción" />
+        <Grid ColumnDefinitions="*,*">
+            <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked" />
+            <Button Grid.Column="1" x:Name="btnLista" Text="Lista" Clicked="btnLista_Clicked" />
+
+
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>
